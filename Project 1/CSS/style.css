@@ -1,21 +1,50 @@
 figure {
     margin: 20px 0;
     padding: 10px;
-    border: 1px solid #eb9030;
-    background-color: #a3e3ea;
+    border: 1px solid #e99132;
+    background-color: #b3eeb5;
 }
 
 figure img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 3px 3px 10px rgba(229, 195, 155, 0.1);
+    box-shadow: 3px 3px 10px rgba(234, 162, 79, 0.1);
 }
 
 figcaption {
-    font-size: 0.9em;
+    font-size: 0.99em;
     font-weight: bold;
     text-align: center;
     color: black;
     margin-top: 10px;
 
+}
+h1 {
+    background-color: rgb(238, 173, 89);
+    text-align: center;
+    padding: 10px;
+}
+nav {
+    text-align: center;
+    background-color: #e9eadd;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: #36cedc;
+    border-radius: 4px;
+}
+nav ul li a:hover {
+    background-color: #ecc829;
 }
