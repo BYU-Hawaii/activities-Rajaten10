@@ -1,0 +1,45 @@
+
+
+    header {
+        background-color: #e0a615;
+        color:rgb(222, 204, 204);
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin-right:0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    
+    /* Flexbox Layout*/
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: antiquewhite;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        background-color: #1fdff1;
+        border-radius: 4px;
+    }
+    nav ul li a:hover {
+        background-color: #e3ad40;
+    }
