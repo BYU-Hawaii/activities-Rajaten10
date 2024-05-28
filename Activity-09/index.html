@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity-9</title>
+    <title>Two-Column Layout with Flexbox and Floating Images</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li class="menu-item"><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li class="menu-item dropdown">
+                <a href="#services"><i class="fas fa-concierge-bell"></i> Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#web-design"><i class="fas fa-paint-brush"></i> Web Design</a></li>
+                    <li><a href="#seo"><i class="fas fa-search"></i> SEO</a></li>
+                    <li><a href="#marketing"><i class="fas fa-bullhorn"></i> Marketing</a></li>
+                </ul>
+            </li>
+            <li class="menu-item dropdown">
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#email"><i class="fas fa-envelope-open"></i> Email</a></li>
+                    <li><a href="#phone"><i class="fas fa-phone"></i> Phone</a></li>
+                    <li><a href="#social-media"><i class="fas fa-share-alt"></i> Social Media</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
-</header>
-<body>
-    <section class="flex-container">
-        <div class="column">
-            <p>Colum number 1</p>
-        </div>
-        <div class="column">
-            <p>colum number 2</p>
-        </div>
-    </section>
 
-    <seection class="flex-container">
-        <img src="images/Delhi-Akshardham_Temple.jpg" alt="Akshardham">
-        <p>New style for this assiment</p>
-
-    </seection>
+    <div class="container">
+        <div class="two-column-layout">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>Plan Your Month in India</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>Visit Some of the best places in India</p>
+            </div>
+        </div>
+        
+        <div class="float-section">
+            <img src="images/Chittorgarh.jpg" alt="Placeholder Image" class="float-image">
+            <p>The Chittorgarh Fort, also known as Chittod Fort, is one of the largest living forts in India.
+                It holds immense historical significance and has been declared a UNESCO World Heritage Site. Here are some fascinating details about this iconic fortress.</p>
+                <p><strong>Geography</strong></p>
+                    <p>1. Chittorgarh is located in the southern part of the state of Rajasthan, approximately 233 km (144.8 mi) from Ajmer</p>
+                    <p>2. The fort stands on a hill 180 m (590.6 ft) high, overlooking the surrounding plains.</p>
+                    <p>3. In 2013, during the 37th session of the World Heritage Committee, Chittorgarh Fort, along with five other forts of Rajasthan, was declared a UNESCO World Heritage Site as part of the group called the Hill Forts of Rajasthan</p>
+                
+        </div>
+    </div>
 
     <footer>
-        <p>Raja Babu</p>
+        <p>&copy; Raja Babu. @theindianfile.com</p>
     </footer>
-    
 </body>
 </html>

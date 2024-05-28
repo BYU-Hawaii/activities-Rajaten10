@@ -1,45 +1,136 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bdbf48;
+}
 
+/* Navbar Styles */
+.navbar {
+    background-color: #52514c;
+    overflow: visible; /* Ensure dropdowns are not cut off */
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #e7a013;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
 
-    header {
-        background-color: #e0a615;
-        color:rgb(222, 204, 204);
-        padding: 20px;
-        text-align: center;
-    }
+/* Menu Styles */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensure flex display */
+    justify-content: center; /* Center the menu items */
+}
 
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    nav ul li {
-        display: inline;
-        margin-right:0 15px;
-    }
+/* Menu Item Styles */
+.menu-item {
+    margin: 0 10px;
+    position: relative; /* Needed for the dropdown positioning */
+}
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-    }
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
 
-    
-    /* Flexbox Layout*/
-    .flex-container{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        background-color: antiquewhite;
+.menu-item a i {
+    margin-right: 8px; /* Space between icon and text */
+}
 
-    }
+.menu-item a:hover {
+    background-color: #92908a;
+    border-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    nav ul li a {
-        text-decoration: none;
-        color: black;
-        padding: 10px 20px;
-        background-color: #1fdff1;
-        border-radius: 4px;
-    }
-    nav ul li a:hover {
-        background-color: #e3ad40;
-    }
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    list-style-type: none;
+    z-index: 20;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    padding: 10px 20px;
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center items vertically */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu li a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.menu-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Two-Column Layout Styles */
+.container {
+    padding: 20px;
+}
+
+.two-column-layout {
+    display: flex;
+    gap: 20px; /* Space between the columns */
+}
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 20px;
+    background-color: #ebc4c4;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Floated Image Section Styles */
+.float-section {
+    margin-top: 30px;
+}
+
+.float-image {
+    float: left;
+    width: 170px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px 20px 0;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #52514c;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    margin-top: 20px;
+    border-top: 2px solid #e7a013;
+}
