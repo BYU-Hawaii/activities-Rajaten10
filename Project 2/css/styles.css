@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(237, 158, 54);
+    color: rgb(11, 0, 0);
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(8, 60, 67);
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    border-bottom: 1px solid #51492c;
+}
+
+.nav ul li a {
+    color: rgb(234, 221, 221);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #2268d8;
+}
+
+.main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+figure {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #e99132;
+    background-color: #b3eeb5;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(234, 162, 79, 0.1);
+}
+
+figcaption {
+    font-size: 0.99em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    /* Medium Devices (Tablets) */
+    .grid-container {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+       }
+    
+       .nav ul li{
+        border: none;
+       }
+    
+       .nav ul li a {
+        border-right: 1px solid #2cdd09;
+        border-bottom: none;
+       }
+       
+       .nav ul li a:last-child {
+        border-right: none;
+       }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        grid-area: header;
+        background-color: rgb(237, 158, 54);
+        color: rgb(11, 0, 0);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
