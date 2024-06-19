@@ -10,7 +10,6 @@ form {
 label {
     display: block;
     margin-bottom: 0.5em;
-
 }
 
 input, button {
@@ -19,12 +18,11 @@ input, button {
     box-sizing: border-box;
     margin-bottom: 1em;
     padding: 0.5em;
-    border: 1px solid #1cb7de;
-
+    border: 1px solid #10b1d9;
 }
 
-header{
-    background-color: #b9cce9;
+header {
+    background-color: #e7c448;
     padding: 1rem;
 }
 
@@ -62,7 +60,6 @@ header{
         flex: 1 1 100%;
         margin-top: 1em;
         background-color: #24e079;
-
     }
 
     .feedback {
