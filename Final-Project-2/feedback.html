@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Fun Kids World</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="menu-item"><a href="game.html"><i class="fas fa-info-circle"></i> Game</a></li>
+                <li class="menu-item"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li class="menu-item"><a href="education.html"><i class="fas fa-book"></i> Educational Materials</a></li>
+                <li class="menu-item"><a href="funfacts.html"><i class="fas fa-smile"></i> Fun Facts</a></li>
+                <li class="menu-item"><a href="feedback.html"><i class="fas fa-comment-dots"></i> Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="feedback">
+            <h2>We Value Your Feedback!</h2>
+            <form action="feedback.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Raja Babu 2024 Fun Kids World</p>
+    </footer>
+</body>
+</html>
