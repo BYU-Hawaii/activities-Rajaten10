@@ -1,7 +1,7 @@
 const gameData = [
     {
         image: 'images/apple.jpg',
-        options: ['Apple', 'Banana'],
+        options: ['Banana', 'Apple'],
         answer: 'Apple'
     },
     {
@@ -21,7 +21,7 @@ const gameData = [
     },
     {
         image: 'images/elephant.jpg',
-        options: ['Elephant', 'Giraffe'],
+        options: ['Giraffe', 'Elephant'],
         answer: 'Elephant'
     },
     {
