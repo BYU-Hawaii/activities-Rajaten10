@@ -5,8 +5,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rating = htmlspecialchars($_POST['rating']);
     $comments = htmlspecialchars($_POST['comments']);
 
-    $data = "Name: $name\nEmail: $email\nRating: $rating\nComments: $comments\n\n";
-    file_put_contents('feedback.txt', $data, FILE_APPEND);
+    // Process the feedback data (e.g., save to database, send email, etc.)
+
+    // Output the thank you message
     echo "Thank you for your feedback!";
+} else {
+    // Display the feedback form if the request method is not POST
+    displayFeedbackForm();
 }
-?>
+
+function displayFeedbackForm() {
+    echo 
