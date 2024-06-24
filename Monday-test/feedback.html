@@ -12,10 +12,10 @@
         <nav class="navbar">
             <ul class="menu">
                 <li class="menu-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li class="menu-item"><a href="game.html"><i class="fas fa-info-circle"></i> Game</a></li>
+                <li class="menu-item"><a href="game.html"><i class="fas fa-gamepad"></i> Game</a></li>
                 <li class="menu-item"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                <li class="menu-item"><a href="education.html"><i class="fas fa-book"></i> Materials</a></li>
-                <li class="menu-item"><a href="funfacts.html"><i class="fas fa-smile"></i> Facts</a></li>
+                <li class="menu-item"><a href="education.html"><i class="fas fa-book"></i> Educational Materials</a></li>
+                <li class="menu-item"><a href="funfacts.html"><i class="fas fa-smile"></i> Fun Facts</a></li>
                 <li class="menu-item"><a href="feedback.html"><i class="fas fa-comment-dots"></i> Feedback</a></li>
             </ul>
         </nav>
@@ -23,7 +23,7 @@
     <main>
         <section class="feedback">
             <h2>We Value Your Feedback!</h2>
-            <form action="feedback.php" method="POST">
+            <form id="feedback-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -49,5 +49,6 @@
     <footer>
         <p>&copy; Raja Babu 2024 Fun Kids World</p>
     </footer>
+    <script src="script/feedback.js"></script>
 </body>
 </html>
