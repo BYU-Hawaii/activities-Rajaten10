@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - Fun Kids World</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .thank-you-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,8 +30,8 @@
     </header>
     <main>
         <section class="feedback">
-            <h2 style="text-align: center;">We Value Your Feedback!</h2>
-            <form action="feedback.php" method="POST">
+            <h2 style="text-align: center;">Feedback</h2>
+            <form id="feedbackForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -44,10 +52,22 @@
                 
                 <button type="submit">Submit</button>
             </form>
+            <div class="thank-you-message" id="thankYouMessage">
+                <h3>Thank you for your feedback!</h3>
+                <p>We appreciate your time and effort in helping us improve.</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; Raja Babu 2024 Fun Kids World</p>
     </footer>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            document.getElementById('thankYouMessage').style.display = 'block'; // Show the thank-you message
+            document.getElementById('feedbackForm').style.display = 'none'; // Hide the form
+        });
+    </script>
 </body>
 </html>

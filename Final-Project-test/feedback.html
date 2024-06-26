@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - Fun Kids World</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,18 +13,18 @@
         <nav class="navbar">
             <ul class="menu">
                 <li class="menu-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li class="menu-item"><a href="game.html"><i class="fas fa-gamepad"></i> Game</a></li>
+                <li class="menu-item"><a href="game.html"><i class="fas fa-info-circle"></i> Game</a></li>
                 <li class="menu-item"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                <li class="menu-item"><a href="education.html"><i class="fas fa-book"></i> Educational Materials</a></li>
-                <li class="menu-item"><a href="funfacts.html"><i class="fas fa-smile"></i> Fun Facts</a></li>
+                <li class="menu-item"><a href="education.html"><i class="fas fa-book"></i> Materials</a></li>
+                <li class="menu-item"><a href="funfacts.html"><i class="fas fa-smile"></i> Facts</a></li>
                 <li class="menu-item"><a href="feedback.html"><i class="fas fa-comment-dots"></i> Feedback</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="feedback">
-            <h2>We Value Your Feedback!</h2>
-            <form id="feedback-form">
+            <h2 style="text-align: center;">Feedback</h2>
+            <form id="feedbackForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -32,11 +33,10 @@
                 
                 <label for="rating">Rating:</label>
                 <select id="rating" name="rating">
-                    <option value="1">1 - Poor</option>
-                    <option value="2">2 - Fair</option>
-                    <option value="3">3 - Good</option>
-                    <option value="4">4 - Very Good</option>
-                    <option value="5">5 - Excellent</option>
+                    <option value="2">Fair</option>
+                    <option value="3">Good</option>
+                    <option value="4">Very Good</option>
+                    <option value="5">Excellent</option>
                 </select>
                 
                 <label for="comments">Comments:</label>
@@ -44,11 +44,16 @@
                 
                 <button type="submit">Submit</button>
             </form>
+            <div class="thank-you-message" id="thankYouMessage">
+                <h3>Thank you for your feedback!</h3>
+                <p>We appreciate your time and effort in helping us improve.</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; Raja Babu 2024 Fun Kids World</p>
     </footer>
+
     <script src="script/feedback.js"></script>
 </body>
 </html>
