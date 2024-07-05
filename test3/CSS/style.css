@@ -1,0 +1,265 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-ad {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul.desktop-menu {
+    display: flex;
+}
+
+header nav ul.desktop-menu li {
+    position: relative;
+}
+
+header nav ul.desktop-menu li a {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul.desktop-menu li a:hover,
+header nav ul.desktop-menu li .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+header nav ul.desktop-menu li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+header nav ul.desktop-menu li .dropdown-content a {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul.desktop-menu li:hover .dropdown-content {
+    display: block;
+}
+
+header nav .mobile-menu {
+    display: none;
+    position: relative;
+}
+
+header nav .mobile-menu button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+header nav .mobile-menu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav .mobile-menu ul li a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+header nav .mobile-menu ul li a:hover,
+header nav .mobile-menu ul li .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+header nav .mobile-menu ul li .dropdown-content {
+    display: none;
+    background-color: #333;
+}
+
+header nav .mobile-menu ul li .dropdown-content a {
+    padding: 1rem;
+}
+
+header nav .mobile-menu ul li .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+header nav .mobile-menu ul li:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header nav ul.desktop-menu {
+        display: none;
+    }
+    header nav .mobile-menu {
+        display: block;
+    }
+}
+
+/* Main content */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #ddd;
+}
+
+.sidebar-ad {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.job-listings {
+    width: 80%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.job-box {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.job-box:hover {
+    transform: scale(1.05);
+}
+
+.job-box h2 {
+    margin-bottom: 0.5rem;
+}
+
+.job-box p {
+    margin-bottom: 1rem;
+}
+
+.job-box button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.job-box button:hover {
+    background: #0056b3;
+}
+
+.job-listings-ad {
+    grid-column: span 2;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .footer-ad {
+    margin-bottom: 1rem;
+}
